@@ -1,6 +1,23 @@
 # JFragmentBus
 主要解决fragment间定点传值和通讯（同样适用于activity）
 
+# 如何集成
+1、在项目的gradle中增加如下代码
+```
+allprojects {
+	repositories {
+		...
+		maven { url 'https://jitpack.io' }
+	}
+}
+```
+2、在library中添加
+```
+dependencies {
+	compile 'com.github.zincPower:JFragmentbus:0.1'
+}
+```
+
 # 如何使用
 1、在需要被调用的方法加上注解Subscribe
 
